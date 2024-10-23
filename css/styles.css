@@ -1,0 +1,384 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.cdnfonts.com/css/helvetica-neue-5');
+
+body{
+    margin: 1.875rem;
+    font-family: 'Helvetica Neue', sans-serif;
+    text-transform: uppercase;
+    font-size: .875rem;
+}
+
+.body-index{
+    background-image: url(https://www.wsupercars.com/wallpapers-regular/Formula-1/Scuderia-Ferrari/2024-Formula1-Ferrari-SF-24-001-2160.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* HEADER */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    height: 15.625rem;
+}
+
+.div-header{
+    margin-bottom: 1.25rem;
+}
+
+.div-logo-ceo{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    gap: 1.25rem;
+}
+
+.div-logo{
+    width: 6.25rem;
+}
+
+.div-logo img{
+    width: 100%;
+}
+
+.div-title-ceo{
+    display: flex;
+    padding-top: .9375rem;
+    font-size: 1.25rem;
+    justify-content: space-between;
+    color: white;
+}
+
+.navbar li{
+    list-style-type: none;
+}
+
+.navbar li a{
+    text-decoration: none;
+    color: white;
+}
+
+.ancla-contact{
+    text-decoration: none;
+}
+
+.button-header a h2{
+    color: black;
+
+}
+
+button{
+    padding: .3125rem;
+    border-radius: 0;
+    border: 0;
+}
+
+/* HEADER */
+
+/* MAIN PAG INDEX */
+
+.contenedor-uno{
+    display: flex;
+    justify-content: space-between;
+    height: 21.25rem;
+    gap: .625rem;
+    width: 100%;
+    letter-spacing: -.03em;
+    font-weight: 500;
+    line-height: 96%;
+    font-size: 3.4vw;
+    color: white;
+}
+
+.contenedor-h2{
+    display: flex;
+}
+
+.contenedor-dos{
+    width: 49%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.titulo-dos{
+    letter-spacing: -.03em;
+    font-weight: 500;
+    line-height: 96%;
+    font-size: 3.4vw;
+    color: white;
+}
+
+.presentacion-Dos{
+    letter-spacing: -.03em;
+    font-weight: 500;
+    line-height: 96%;
+    font-size: 1.25rem;
+}
+
+.presentacion-P{
+    font-weight: 500;
+    line-height: 96%;
+    font-size: 1.25rem;
+}
+
+.contenedor-tres{
+    width: 100%;
+    color: white;
+}
+
+.titulo-Uno{
+    color: white;
+    font-size: 10.3vw;
+    font-weight: 500;
+    letter-spacing: -.07em;
+    line-height: 96%;
+    text-align: center;
+}
+
+/* MAIN PAG INDEX */
+
+/* MAIN PAG ABOUT */
+
+.body-About{
+    background-color: black;
+}
+
+.div-bImg{
+    background-image: cover;
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 37.5rem;
+}
+
+.div-bImg img{
+    width: 100%;
+    height: 100%;
+}
+
+.titulo-About h1{
+    color: white;
+    font-size: 9.3vw;
+    font-weight: 500;
+    letter-spacing: -.07em;
+    line-height: 96%;
+    text-align: center;
+}
+
+/* MAIN PAG ABOUT */
+
+/* MAIN PAG SERVICES */
+
+.body-services{
+    background-color: black
+}
+
+.art-text h1 {
+    color: white;
+    letter-spacing: -.03em;
+    font-weight: 500;
+    line-height: 96%;
+    font-size: 3.125rem;
+}
+
+.art-text p{
+    color: white;
+    letter-spacing: -.03em;
+    font-weight: 500;
+    line-height: 96%;
+    font-size: 3.125rem;
+}
+
+.div-sImg{
+    width: 70%;
+}
+
+.div-sImg img{
+    width: 100%;
+}
+
+.div-cards{
+    background-color: #D9D9D9;
+    width: 18.75rem;
+    margin-bottom: .3125rem;
+}
+
+.div-cards img{
+    width: 30%;
+    height: 100%;
+}
+
+/* MAIN PAG SERVICES */
+
+/* MAIN PAG BLOG */
+
+.body-blog{
+    background-color: black;
+}
+
+
+.contenedor-section-uno{
+    background-image: url(https://www.wsupercars.com/wallpapers-regular/Formula-1/Williams/2023-Formula1-Williams-FW45-001-2160.jpg);
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+}
+
+.contenedor-section-uno img{
+    width: 100%;
+}
+
+.contenedor-section-uno h1{
+    color: white;
+    letter-spacing: -.03em;
+    font-weight: 500;
+    line-height: 96%;
+    font-size: 11.2vw;
+}
+
+.contenedor-section-dos{
+    width: 100%;
+    height: 31.25rem;
+}
+
+.contenedor-section-dos h1{
+    color: white;
+}
+
+.card-container{
+    display: flex;
+}
+
+.card{
+    width: 21.875rem;
+    height: 21.875rem;
+    margin: .625rem;
+    position: relative;
+}
+
+.card-img{
+    width: 100%;
+    height: 100%;
+}
+
+.card-img img{
+    width: 100%;
+    object-fit: contain;
+}
+
+.card-info h3{
+    color: white;
+    position: absolute;
+    bottom: 0;
+    left: .9375rem;
+}
+
+.ancla-img img{
+    width: 1.625rem;
+    position: absolute;
+    margin-top: .9375rem;
+    margin-right: .9375rem;
+    top: 0;
+    right: 0;
+}
+
+/* MAIN PAG BLOG */
+
+/* MAIN PAG CONTACT */
+
+.body-contact{
+    background-image: url(https://cdn.pixabay.com/photo/2018/02/22/18/35/ferrari-458-speciale-3173661_960_720.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.contenedor-h1{
+    color: white;
+    font-size: 4.375rem;
+    font-weight: 500;
+    letter-spacing: -.07em;
+    line-height: 96%;
+}
+
+.contenedor-disclaimer div h2{
+    margin: .3125rem;
+    color: #999999;
+    letter-spacing: -.03em;
+    font-weight: 500;
+    line-height: 96%;
+    font-size: 3.125rem;
+}
+
+.contenedor-disclaimer div p{
+    margin: .3125rem;
+    color: #999999;
+    letter-spacing: -.03em;
+    font-weight: 500;
+    line-height: 96%;
+    font-size: 3.125rem;
+}
+
+.contenedor-formulario{
+    color: white;
+}
+
+/* MAIN PAG CONTACT */
+
+/* FOOTER INDEX */
+
+.div-footer-index{
+    display: flex;
+    justify-content: space-between;
+}
+
+.div-logos-footer{
+    width: 12.5rem;
+    display: flex;
+}
+
+.div-logos-redes{
+    width: 6.25rem;
+}
+
+.div-logos-redes a img{
+    width: 100%;
+}
+
+.div-footer-index h3{
+    color: white;
+    font-size: 1.5625rem
+}
+
+.div-footer-index p{
+    color: white;
+    font-size: 1.5625rem
+}
+
+/* FOOTER INDEX */
+
+/* FOOTER DEMAS PAGS */
+
+.div-logos-footerD{
+    width: 3.125rem;
+    background-color: #D9D9D9;
+    padding: 2px;
+}
+
+.div-logos-redes a img{
+    width: 100%;
+}
+
+.div-demas-footer h3 {
+    color: white;
+    font-size: 1.5625rem;
+}
+
+.div-demas-footer p{
+    color: white;
+    font-size: 1.5625rem;
+}
