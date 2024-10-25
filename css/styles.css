@@ -24,7 +24,7 @@ body{
 header{
     display: flex;
     justify-content: space-between;
-    height: 15.625rem;
+    height: 23.75rem;
 }
 
 .div-header{
