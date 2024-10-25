@@ -144,6 +144,12 @@ button{
 
 /* MAIN PAG ABOUT */
 
+.contenedor-section-about{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: 1fr;
+}
+
 .body-About{
     background-color: black;
 }
@@ -151,13 +157,19 @@ button{
 .div-bImg{
     background-image: cover;
     background-repeat: no-repeat;
-    width: 50%;
+    width: 100%;
     height: 37.5rem;
+    grid-column: 1/4;
 }
 
 .div-bImg img{
     width: 100%;
     height: 100%;
+}
+
+.titulo-About{
+    grid-column: 3/5;
+    display: inline-block;
 }
 
 .titulo-About h1{
