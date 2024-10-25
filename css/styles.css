@@ -314,24 +314,28 @@ button{
 
 /* MAIN PAG BLOG */
 
+
 .body-blog{
     background-color: black;
 }
 
-
 .contenedor-section-uno{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
     background-image: url(https://www.wsupercars.com/wallpapers-regular/Formula-1/Williams/2023-Formula1-Williams-FW45-001-2160.jpg);
     background-size: cover;
-    width: 100vw;
-    height: 100vh;
-}
-
-.contenedor-section-uno img{
+    background-repeat: no-repeat;
+    padding-top: 230px;
     width: 100%;
+    
 }
 
-.contenedor-section-uno h1{
+.contenedor-section-uno h2{
     color: white;
+    padding-bottom: 10px;
     letter-spacing: -.03em;
     font-weight: 500;
     line-height: 96%;
@@ -339,23 +343,61 @@ button{
 }
 
 .contenedor-section-dos{
+    padding-top: 150px;
     width: 100%;
-    height: 31.25rem;
 }
 
 .contenedor-section-dos h1{
     color: white;
 }
 
-.card-container{
+.titulo-section-dos{
     display: flex;
+    gap: 1.25rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 150px;
 }
 
-.card{
-    width: 21.875rem;
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,1fr);
+}
+
+.card1{
+    width: auto;
     height: 21.875rem;
     margin: .625rem;
     position: relative;
+}
+
+.card2{
+    width: auto;
+    height: 21.875rem;
+    margin: .625rem;
+    position: relative;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+.card3{
+    width: auto;
+    height: 21.875rem;
+    margin: .625rem;
+    position: relative;
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+}
+
+.card4{
+    width: auto;
+    height: 21.875rem;
+    margin: .625rem;
+    position: relative;
+    grid-column: 4 / 5;
+    grid-row: 2 / 3;
 }
 
 .card-img{
@@ -365,10 +407,12 @@ button{
 
 .card-img img{
     width: 100%;
-    object-fit: contain;
+    height: 100%;
+    object-fit: cover;
 }
 
 .card-info h3{
+    padding-bottom: 5px;
     color: white;
     position: absolute;
     bottom: 0;
