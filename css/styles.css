@@ -32,10 +32,11 @@ header{
 }
 
 .div-logo-ceo{
+    height: 12.5rem;
     display: flex;
     justify-content: center;
     align-items: start;
-    gap: 1.25rem;
+    gap: 2.5rem;
 }
 
 .div-logo{
@@ -50,7 +51,8 @@ header{
     display: flex;
     padding-top: .9375rem;
     font-size: 1.25rem;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
     color: white;
 }
 
