@@ -439,7 +439,15 @@ button{
 
 }
 
+.section-contact{
+    display: flex;
+}
+
 .contenedor-h1{
+    display: block;
+    padding-right: 18.75rem;
+    width: 50vw;
+    height: 60vh;
     color: white;
     font-size: 4.375rem;
     font-weight: 500;
@@ -447,13 +455,48 @@ button{
     line-height: 96%;
 }
 
-.contenedor-disclaimer div h2{
+.h2-1{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    padding-bottom: 30px;
+}
+
+.h2-2{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    padding-bottom: 30px;
+}
+
+.h2-3{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    padding-bottom: 30px;
+}
+
+.h2-4{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    padding-bottom: 30px;
+}
+
+.contenedor-disclaimer{
+    width: 50vw;
+    padding-right: 18.75rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contenedor-disclaimer div h1{
     margin: .3125rem;
     color: #999999;
     letter-spacing: -.03em;
     font-weight: 500;
     line-height: 96%;
-    font-size: 3.125rem;
+    font-size: 1.25rem;
 }
 
 .contenedor-disclaimer div p{
@@ -462,11 +505,29 @@ button{
     letter-spacing: -.03em;
     font-weight: 500;
     line-height: 96%;
-    font-size: 3.125rem;
+    font-size: 1.25rem;
 }
 
 .contenedor-formulario{
+    width: 50%;
+    height: 60vh;
     color: white;
+}
+
+.contenedor-imputs{
+    padding: 50px;
+}
+
+.contenedor-chooseFile{
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.controls{
+    width: 100%;
+    border: none;
 }
 
 /* MAIN PAG CONTACT */
