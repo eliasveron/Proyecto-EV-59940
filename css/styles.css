@@ -523,7 +523,17 @@ button{
         font-size: 10px;
     }
 
+@media (max-width:536px){
+    .contenedor-section-services{
+        grid-template-rows: 230px 500px 500px;
+    }
+}
+
 @media (max-width:460px){
+
+        .contenedor-section-services{
+            grid-template-rows: 230px 400px 500px;
+        }
         .art-text1 h1{
             padding-right: 10px;
         }
@@ -535,7 +545,10 @@ button{
         .div-header{
             padding-left: 20px;
         }
-    }
+        .div-bImg{
+            height: 300px;
+        }
+}
 
 @media (max-width:358px){
         .div-header{
@@ -582,10 +595,6 @@ button{
 
         .div-card-img img{
             width: 100%;
-        }
-
-        .div-card-img-1{
-            width: 110px;
         }
 
         
