@@ -33,6 +33,7 @@ header{
 
 .div-header{
     margin-bottom: 1.25rem;
+    width: 100px;
 }
 
 .div-logo-ceo{
@@ -58,6 +59,12 @@ header{
     align-items: center;
     color: white;
     height: 7rem;
+}
+
+.enlaces:hover{
+    font-size: 25px;
+    padding-left: 10px;
+
 }
 
 .navbar li{
@@ -361,6 +368,16 @@ button{
 }
 
 @media (max-width:744px){
+
+    .div-header{
+        padding-right: 10px;
+    }
+
+    .navbar{
+        font-size: 15px;
+        padding-left: 20px;
+    }
+
     .contenedor-section-services{
         grid-template-columns: 15% 70% 15%;
         grid-template-rows: 230px 800px 500px;
@@ -453,6 +470,10 @@ button{
     }
 
     @media (max-width:320px){
+
+        .navbar{
+            padding-left: 20px;
+        }
 
         .body-services{
             margin: 10px;
@@ -659,6 +680,14 @@ button{
 }
 
 @media (max-width:744px){
+    .div-header{
+        padding-right: 10px;
+    }
+
+    .navbar{
+        font-size: 15px;
+        padding-left: 20px;
+    }
     .card-container{
         display: grid;
         grid-template-columns: 50% 50%;
@@ -713,6 +742,10 @@ button{
 }
 
 @media (max-width:320px){
+
+    .body-services{
+        margin: 10px;
+    }
     .body-blog{
         margin: 10px;
     }
