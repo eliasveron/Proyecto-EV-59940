@@ -320,33 +320,33 @@ button{
 .div-oferts1{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     gap: .625rem;
-    padding-left: .125rem;
+    padding-left: 10px;
     padding-right: .125rem;
 }
 
 .div-oferts2{
     padding-top: .625rem;
     padding-bottom: .625rem;
-    width: 15.9375rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: .625rem;
+    padding-left: 10px;
 }
 
 .div-oferts3{
     padding-top: .625rem;
     padding-bottom: .625rem;
-    width: 15.9375rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: .625rem;
+    padding-left: 10px;
 }
 
 .div-cards{
@@ -358,7 +358,7 @@ button{
 }
 
 .div-card-img{
-    width: 30%;
+    width: 40%;
     height: 9.375rem;
 }
 
@@ -367,7 +367,61 @@ button{
     height: 100%;
 }
 
+@media (max-width:1256px){
+
+    .button-header{
+        display: none;
+    }
+
+    .div-header{
+        padding-left: 150px;
+    }
+
+    .art-text1 h1{
+        font-size: 25px;
+    }
+
+    .art-text2 p{
+        font-size: 25px;
+        padding-top: 90px;
+    }
+    .div-cards{
+        width: 150px;
+        height: 150px;
+    }
+    .div-oferts1{
+        font-size: 8px;
+    }
+    .div-oferts2{
+        font-size: 8px;
+    }
+    .div-oferts3{
+        font-size: 8px;
+    }
+    
+    .div-h3-footer h3{
+        font-size: 15px;
+    }
+}
+
+@media (max-width:838px){
+    .div-h3-footer h3{
+        display: block;
+        font-size: 10px;
+        padding-left: 50px;
+    }
+
+    .div-p-footer p{
+        font-size: 12px;
+        padding-left: 50px;
+    }
+}
+
 @media (max-width:744px){
+
+    .navbar li {
+        padding-bottom: 10px;
+    }
 
     .div-header{
         padding-right: 10px;
@@ -467,6 +521,31 @@ button{
 
     .div-p-footer p{
         font-size: 10px;
+    }
+
+    @media (max-width:460px){
+        .art-text1 h1{
+            padding-right: 10px;
+        }
+
+        .navbar li {
+            padding-bottom: 5px;
+        }
+
+        .div-header{
+            padding-left: 20px;
+        }
+    }
+
+    @media (max-width:358px){
+        .div-header{
+            padding-left: 30px;
+            
+        }
+
+        .navbar li {
+            padding-bottom: 5px;
+        }
     }
 
     @media (max-width:320px){
@@ -679,6 +758,18 @@ button{
     right: 0;
 }
 
+@media (max-width:1508px){
+    .titulo-section-dos h2{
+        padding-left: 45px;
+    }
+}
+
+@media (max-width:844px){
+    .card-info h3{
+        font-size: 15px;
+    }
+}
+
 @media (max-width:744px){
     .div-header{
         padding-right: 10px;
@@ -712,6 +803,10 @@ button{
         line-height: 150%;
     }
 
+    .titulo-section-dos h2{
+        font-size: 20px;
+    }
+
     .titulo-section-dos div{
         padding-left: 10px;
     }
@@ -741,6 +836,36 @@ button{
     }
 }
 
+@media (max-width:612px){
+    .card-info h3{
+        font-size: 15px;
+    }
+}
+
+@media (max-width:540px){
+    .card1 , .card2 , .card3 , .card4{
+        height: 250px;
+    }
+
+    .card-container{
+        grid-template-rows: repeat(4, 270px);
+    }
+}
+
+@media (max-width:438px){
+    .card1 , .card2 , .card3 , .card4{
+        height: 210px;
+    }
+
+    .card-info h3{
+        font-size: 10px;
+    }
+
+    .card-container{
+        grid-template-rows: repeat(4, 230px);
+    }
+}
+
 @media (max-width:320px){
 
     .body-services{
@@ -761,6 +886,10 @@ button{
         display: grid;
         grid-template-columns: 50% 50%;
         grid-template-rows: repeat(4,180px);
+    }
+
+    .card1 , .card2 , .card3 , .card4{
+        height: 190px;
     }
 
     .card-info h3{
