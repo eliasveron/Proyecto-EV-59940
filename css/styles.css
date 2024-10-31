@@ -354,7 +354,7 @@ button{
     background-color: #D9D9D9;
     width: 23.125rem;
     margin-bottom: .3125rem;
-    width: 450px;
+    width: 350px;
 }
 
 .div-card-img{
@@ -523,7 +523,7 @@ button{
         font-size: 10px;
     }
 
-    @media (max-width:460px){
+@media (max-width:460px){
         .art-text1 h1{
             padding-right: 10px;
         }
@@ -537,7 +537,7 @@ button{
         }
     }
 
-    @media (max-width:358px){
+@media (max-width:358px){
         .div-header{
             padding-left: 30px;
             
@@ -548,7 +548,7 @@ button{
         }
     }
 
-    @media (max-width:320px){
+@media (max-width:320px){
 
         .navbar{
             padding-left: 20px;
