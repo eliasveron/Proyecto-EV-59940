@@ -901,7 +901,8 @@ button{
     }
 
     .titulo-section-dos h2{
-        font-size: 20px;
+        font-size: 17px;
+        padding-left: 0;
     }
 
     .titulo-section-dos{
