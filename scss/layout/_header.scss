@@ -1,0 +1,51 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    height: 300px;
+    .div-logo-ceo{
+        display: flex;
+        justify-content: space-between;
+        width: 300px;
+        height: 150px;
+        .div-title-ceo{
+            display: flex;
+            font-size: 10px;
+            justify-content: center;
+            align-items: start;
+            color: white;
+        }
+    
+    }
+    .div-navbar{
+        width: 100px;
+        .navbar{
+            li{
+                list-style-type: none;
+                font-weight: 500;
+                line-height: 120%;
+                margin: 10px;
+                a{
+                    text-decoration: none;
+                    color: white;
+                    &:hover{
+                        padding-left: 20px;
+                    }
+                }
+            }
+        }
+    }
+    .button-header{
+        margin: 10px 15px 0 0;
+        a{
+            text-decoration: none;
+            h2{
+                color: black;
+            }
+        }
+    }
+}
+
+.header-blog{
+    width: 98%;
+    position: absolute;
+}

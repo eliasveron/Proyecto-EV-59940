@@ -1,0 +1,30 @@
+@media(max-width:768px){
+
+    header{
+        height: 200px;
+        .div-navbar{
+            padding-right: 30px;
+            padding-left: 100px;
+            width: 500px;
+            .navbar{
+                display: flex;
+                flex-direction: row;
+                font-size: 15px;
+                padding-left: 20px;
+                li {
+                    a{
+                        &:hover{
+                            padding: 50px 0 0 0 ;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .contenedor-section-services{
+        grid-template-columns: 15% 70% 15%;
+        grid-template-rows: 230px 800px 500px;
+
+    }
+}

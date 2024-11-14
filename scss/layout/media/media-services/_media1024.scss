@@ -1,0 +1,100 @@
+@media (max-width:1024px){
+
+    header{
+        height: 150px;
+        .div-navbar{
+            padding-left: 450px;
+        }
+        .button-header{
+            display: none;
+        }
+    }
+
+    
+
+    .contenedor-section-services{
+        display: grid;
+        grid-template-rows: 260px 40px 250px ;
+        grid-template-columns: 60% 5% 25% 10%;
+        height: 800px;
+        .cont-presentacion-services{
+            grid-column: 1 / 5;
+            .art-text1{
+                h1{
+                    font-size: 35px;
+                }
+            }
+            .art-text2{
+                height: 100px;
+                p{
+                    font-size: 35px;
+                    padding-top: 0px;
+                }
+            }
+        }
+        .div-sImg{
+            height: 500px;
+        }
+        .contenedor-cards{
+            width: 250px;
+            height: 460px;
+            margin-bottom: 50px;
+            grid-row: 3 / 4;
+            .div-cards{
+                width: 250px;
+                height: 150px;
+                .div-oferts1{
+                    gap: 2px;
+                }
+                .div-oferts1{
+                    font-size: 8px;
+                }
+                .div-oferts2{
+                    font-size: 8px;
+                }
+                .div-oferts3{
+                    font-size: 8px;
+                }
+            }
+        }
+    }
+    .contenedor-footer{
+        padding-top: 0;
+        .div-h3-footer {
+            display: flex;
+            align-items: center;
+            h3{
+                font-size: 15px;
+            }
+        }
+        .div-p-footer{
+            display: flex;
+            align-items: center;
+        }
+    }
+}
+
+@media(max-width:838px){
+    .contenedor-section-services{
+        .cont-presentacion-services{
+            .art-text1{
+                h1{
+                    font-size: 25px;
+                }
+            }
+            .art-text2{
+                p{
+                    font-size: 25px;
+                    padding-top: 12px;
+                }
+            }
+        }
+    }
+    .contenedor-footer{
+        .div-p-footer{
+            p{
+                font-size: 10px;
+            }
+        }
+    }
+}
