@@ -1,0 +1,49 @@
+@media(max-width:528px){
+    .contenedor-section-services{
+        height: auto;
+        .contenedor-cards{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 0px;
+            .div-cards{
+                width: 60%;
+                margin-top: 10px;
+                .div-card-img{
+                    width: 40%;
+                }
+                .div-oferts1{
+                    font-size: 10px;
+                    gap: 5px;
+                    padding-left: 0px;
+                    padding-right: 0px;
+                    width: 60%;
+                }
+                .div-oferts2{
+                    font-size: 10px;
+                    gap: 5px;
+                    padding-left: 0px;
+                    padding-right: 0px;
+                    width: 60%;
+                }
+                .div-oferts3{
+                    font-size: 10px;
+                    gap: 5px;
+                    padding-left: 0px;
+                    padding-right: 0px;
+                    width: 60%;
+                }
+            }
+        }
+    }
+    .contenedor-footer{
+        .cont-text-footer{
+            .div-p-footer{
+                p{
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+}

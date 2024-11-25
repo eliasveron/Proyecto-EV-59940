@@ -3,7 +3,7 @@
     header{
         height: 150px;
         .div-navbar{
-            padding-left: 450px;
+            padding-left: 550px;
         }
         .button-header{
             display: none;
@@ -60,40 +60,26 @@
     }
     .contenedor-footer{
         padding-top: 0;
-        .div-h3-footer {
+        .div-logos-footer{
             display: flex;
-            align-items: center;
-            h3{
-                font-size: 15px;
-            }
+            justify-content: flex-end;
+            height: 55px;
         }
-        .div-p-footer{
+        .cont-text-footer{
+            width: 70%;
             display: flex;
-            align-items: center;
-        }
-    }
-}
-
-@media(max-width:838px){
-    .contenedor-section-services{
-        .cont-presentacion-services{
-            .art-text1{
-                h1{
-                    font-size: 25px;
+            justify-content: space-between;
+            gap: 20px;
+            .div-h3-footer {
+                display: flex;
+                align-items: center;
+                h3{
+                    font-size: 15px;
                 }
             }
-            .art-text2{
-                p{
-                    font-size: 25px;
-                    padding-top: 12px;
-                }
-            }
-        }
-    }
-    .contenedor-footer{
-        .div-p-footer{
-            p{
-                font-size: 10px;
+            .div-p-footer{
+                display: flex;
+                align-items: center;
             }
         }
     }

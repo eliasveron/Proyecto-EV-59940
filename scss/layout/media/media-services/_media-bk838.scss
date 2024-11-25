@@ -1,0 +1,43 @@
+@media(max-width:838px){
+    header{
+        .div-navbar{
+            padding-left: 100px;
+            width: 500px;
+            .navbar{
+                display: flex;
+                flex-direction: row;
+                font-size: 15px;
+                padding-left: 20px;
+                li {
+                    a{
+                        &:hover{
+                            padding: 50px 0 0 0 ;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .contenedor-section-services{
+        .cont-presentacion-services{
+            .art-text1{
+                h1{
+                    font-size: 25px;
+                }
+            }
+            .art-text2{
+                p{
+                    font-size: 25px;
+                    padding-top: 12px;
+                }
+            }
+        }
+    }
+    .contenedor-footer{
+        .div-p-footer{
+            p{
+                font-size: 10px;
+            }
+        }
+    }
+}

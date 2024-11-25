@@ -1,0 +1,13 @@
+@media(max-width:644px){
+   header{
+    height: 200px;
+    .div-navbar{
+        width: 20%;
+        .navbar{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+        }
+    }
+   } 
+}
