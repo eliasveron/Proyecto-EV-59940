@@ -24,22 +24,24 @@ header{
                 font-weight: 500;
                 line-height: 120%;
                 margin: 10px;
+                &:hover{
+                    transform: translate(1.25rem);
+                }
                 a{
                     text-decoration: none;
                     color: white;
-                    &:hover{
-                        transform: translate(20px);
-                    }
                 }
             }
         }
     }
     .button-header{
         margin: 10px 15px 0 0;
+        background-color: transparent;
+        width: 250px;
         a{
             text-decoration: none;
             h2{
-                color: black;
+                color: rgb(255, 255, 255);
             }
         }
     }
@@ -48,4 +50,5 @@ header{
 .header-blog{
     width: 98%;
     position: absolute;
+    height: 30%;
 }

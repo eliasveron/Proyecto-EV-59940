@@ -7,16 +7,13 @@
     background-image: url(https://www.wsupercars.com/wallpapers-regular/Formula-1/Williams/2023-Formula1-Williams-FW45-001-2160.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    padding-top: 230px;
     width: 100%;
     height: 100vh;
-    .div-titulo{
-        height: 200px;
+    .text-focus-in{
+        height: 250px;
     }
     h2{
         color: white;
-        padding-top: 0px;
-        padding-bottom: 0px;
         letter-spacing: -.03em;
         font-weight: 500;
         line-height: 0%;
@@ -30,11 +27,43 @@
     h2{
         color: white;
     }
-    .titulo-section-dos{
+    .tracking-in-expand{
         display: flex;
         gap: 1.25rem;
         justify-content: center;
         align-items: center;
         padding-bottom: 150px;
+    }
+}
+
+.text-focus-in {
+	animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+@keyframes text-focus-in {
+    0% {
+        filter: blur(12px);
+    opacity: 0;
+    }
+    100% {
+        filter: blur(0px);
+    opacity: 1;
+    }
+}
+
+.tracking-in-expand {
+	animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+@keyframes tracking-in-expand {
+    0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+    }
+    40% {
+    opacity: 0.6;
+    }
+    100% {
+    opacity: 1;
     }
 }
