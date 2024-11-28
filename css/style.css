@@ -50,8 +50,6 @@ header {
 header .div-logo-ceo {
   display: flex;
   justify-content: space-between;
-  width: 300px;
-  height: 150px;
 }
 header .div-logo-ceo .div-title-ceo {
   display: flex;
@@ -63,16 +61,20 @@ header .div-logo-ceo .div-title-ceo {
 header .div-navbar {
   width: 100px;
 }
-header .div-navbar .navbar li {
+header .div-navbar .navbar ul {
+  padding: 0;
+  margin: 0;
+}
+header .div-navbar .navbar ul li {
   list-style-type: none;
   font-weight: 500;
   line-height: 120%;
   margin: 10px;
 }
-header .div-navbar .navbar li:hover {
+header .div-navbar .navbar ul li:hover {
   transform: translate(1.25rem);
 }
-header .div-navbar .navbar li a {
+header .div-navbar .navbar ul li a {
   text-decoration: none;
   color: white;
 }
@@ -89,9 +91,9 @@ header .button-header a h2 {
 }
 
 .header-blog {
+  margin: 5px;
   width: 98%;
   position: absolute;
-  height: 30%;
 }
 
 .contenedor-uno {
@@ -223,10 +225,10 @@ header .button-header a h2 {
   order: 2;
   height: 200px;
 }
-.contenedor-section-services .cont-presentacion-services .blink-1 {
+.contenedor-section-services .cont-presentacion-services .art-text1 {
   grid-column: 1/2;
 }
-.contenedor-section-services .cont-presentacion-services .blink-1 h1 {
+.contenedor-section-services .cont-presentacion-services .art-text1 h1 {
   color: white;
   letter-spacing: -0.03em;
   font-weight: 500;
@@ -256,6 +258,7 @@ header .button-header a h2 {
 .contenedor-section-services .div-sImg img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
 .contenedor-section-services .kenburns-top {
   animation: kenburns-top 5s ease-out both;
@@ -278,12 +281,12 @@ header .button-header a h2 {
   line-height: 50%;
 }
 
-.blink-1 {
+.art-text1 {
   animation: blink-1 0.6s both;
   animation-iteration-count: 5;
 }
 
-@keyframes blink-1 {
+@keyframes art-text1 {
   0%, 50%, 100% {
     opacity: 1;
   }
@@ -291,48 +294,30 @@ header .button-header a h2 {
     opacity: 0;
   }
 }
-.contenedor-section-uno {
+.body-blog .img-fondo {
+  width: 97vw;
+  height: 100vh;
+  position: absolute;
+}
+.body-blog .img-fondo img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
+.body-blog .contenedor-section-uno {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: black;
-  background-image: url(https://www.wsupercars.com/wallpapers-regular/Formula-1/Williams/2023-Formula1-Williams-FW45-001-2160.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
   width: 100%;
   height: 100vh;
 }
-.contenedor-section-uno .text-focus-in {
+.body-blog .contenedor-section-uno .text-focus-in {
   height: 250px;
-}
-.contenedor-section-uno h2 {
-  color: white;
-  letter-spacing: -0.03em;
-  font-weight: 500;
-  line-height: 0%;
-  font-size: 250px;
-}
-
-.contenedor-section-dos {
-  padding-top: 150px;
-  width: 100%;
-}
-.contenedor-section-dos h2 {
-  color: white;
-}
-.contenedor-section-dos .tracking-in-expand {
-  display: flex;
-  gap: 1.25rem;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 150px;
-}
-
-.text-focus-in {
   animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
 }
-
 @keyframes text-focus-in {
   0% {
     filter: blur(12px);
@@ -343,10 +328,30 @@ header .button-header a h2 {
     opacity: 1;
   }
 }
-.tracking-in-expand {
+.body-blog .contenedor-section-uno h2 {
+  color: white;
+  letter-spacing: -0.03em;
+  font-weight: 500;
+  line-height: 0%;
+  font-size: 250px;
+}
+.body-blog .contenedor-section-dos {
+  padding-top: 150px;
+  width: 100%;
+}
+.body-blog .contenedor-section-dos h2 {
+  color: white;
+}
+.body-blog .contenedor-section-dos .tracking-in-expand {
+  display: flex;
+  gap: 1.25rem;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 150px;
+}
+.body-blog .tracking-in-expand {
   animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) both;
 }
-
 @keyframes tracking-in-expand {
   0% {
     letter-spacing: -0.5em;
@@ -359,6 +364,7 @@ header .button-header a h2 {
     opacity: 1;
   }
 }
+
 .body-contact {
   background-image: url(https://cdn.pixabay.com/photo/2018/02/22/18/35/ferrari-458-speciale-3173661_960_720.jpg);
   background-size: cover;
@@ -587,7 +593,7 @@ header .button-header a h2 {
     height: 150px;
   }
   header .div-navbar {
-    padding-left: 550px;
+    padding-left: 500px;
   }
   header .button-header {
     display: none;
@@ -663,17 +669,23 @@ header .button-header a h2 {
   }
 }
 @media (max-width: 838px) {
+  header {
+    width: 100%;
+  }
   header .div-navbar {
-    padding-left: 100px;
-    width: 500px;
+    width: 120px;
   }
   header .div-navbar .navbar {
     display: flex;
     flex-direction: row;
-    font-size: 15px;
     padding-left: 20px;
+    height: auto;
   }
-  header .div-navbar .navbar li a:hover {
+  header .div-navbar .navbar ul {
+    margin: 0;
+    padding: 0;
+  }
+  header .div-navbar .navbar ul li a:hover {
     padding: 50px 0 0 0;
   }
   .contenedor-section-services .cont-presentacion-services .art-text1 h1 {
@@ -692,8 +704,8 @@ header .button-header a h2 {
     height: 70px;
   }
   header .div-navbar {
-    padding-left: 100px;
-    width: 500px;
+    padding-left: 400px;
+    width: 120px;
   }
   header .div-navbar .navbar {
     display: flex;
@@ -788,7 +800,7 @@ header .button-header a h2 {
     height: 200px;
   }
   header .div-navbar {
-    width: 20%;
+    padding-left: 300px;
   }
   header .div-navbar .navbar {
     display: flex;
@@ -801,12 +813,16 @@ header .button-header a h2 {
     width: 140px;
   }
 }
-@media (max-width: 550px) {
+@media (max-width: 560px) {
   header .div-navbar {
     width: 200px;
+    padding-left: 250px;
   }
 }
 @media (max-width: 528px) {
+  header .div-navbar {
+    padding-left: 200px;
+  }
   .contenedor-section-services {
     height: auto;
   }
@@ -855,6 +871,108 @@ header .button-header a h2 {
   }
   .contenedor-section-services .div-sImg {
     height: 400px;
+  }
+}
+@media (max-width: 1024px) {
+  .body-blog .header-blog .div-navbar {
+    padding-left: 700px;
+  }
+  .body-blog main .contenedor-section-uno .text-focus-in {
+    height: 150px;
+  }
+  .body-blog main .contenedor-section-uno .text-focus-in h2 {
+    margin: 0;
+    transform: translateY(300px);
+    font-size: 150px;
+  }
+  .body-blog main .contenedor-section-dos {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .body-blog main .contenedor-section-dos .tracking-in-expand {
+    width: 500px;
+    padding-bottom: 0px;
+  }
+  .body-blog main .contenedor-section-dos .tracking-in-expand h2 {
+    font-size: 25px;
+    line-height: 130%;
+    text-align: center;
+  }
+  .body-blog main .contenedor-section-dos .card-container {
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, 400px);
+    grid-template-rows: repeat(4, 370px);
+    gap: 0;
+    margin-bottom: 30px;
+  }
+  .body-blog main .contenedor-section-dos .card-container .card1 {
+    grid-column: 1/2;
+  }
+  .body-blog main .contenedor-section-dos .card-container .card2 {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+  .body-blog main .contenedor-section-dos .card-container .card3 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+  .body-blog main .contenedor-section-dos .card-container .card4 {
+    grid-column: 2/3;
+    grid-row: 4/5;
+  }
+}
+@media (max-width: 1000px) {
+  .body-blog .header-blog .div-navbar {
+    padding-right: 30px;
+  }
+  .body-blog .contenedor-footer .div-h3-footer {
+    display: flex;
+    align-items: center;
+  }
+  .body-blog .contenedor-footer .div-h3-footer h3 {
+    font-size: 15px;
+  }
+  .body-blog .contenedor-footer .div-p-footer {
+    display: flex;
+    align-items: center;
+  }
+  .body-blog .contenedor-footer .div-p-footer p {
+    font-size: 12px;
+  }
+}
+@media (max-width: 946px) {
+  .body-blog .header-blog .div-navbar {
+    padding-left: 600px;
+  }
+}
+@media (max-width: 838px) {
+  .body-blog .header-blog .div-navbar {
+    width: 100px;
+    padding-left: 470px;
+  }
+}
+@media (max-width: 794px) {
+  .body-blog main .contenedor-section-dos .card-container {
+    display: grid;
+    grid-template-columns: repeat(2, 300px);
+    grid-template-rows: repeat(4, 300px);
+  }
+  .body-blog main .contenedor-section-dos .card-container .card1 {
+    height: auto;
+  }
+  .body-blog main .contenedor-section-dos .card-container .card2 {
+    height: auto;
+  }
+  .body-blog main .contenedor-section-dos .card-container .card3 {
+    height: auto;
+  }
+  .body-blog main .contenedor-section-dos .card-container .card4 {
+    height: auto;
   }
 }
 .contenedor-cards {

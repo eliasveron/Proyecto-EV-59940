@@ -5,8 +5,6 @@ header{
     .div-logo-ceo{
         display: flex;
         justify-content: space-between;
-        width: 300px;
-        height: 150px;
         .div-title-ceo{
             display: flex;
             font-size: 10px;
@@ -19,17 +17,21 @@ header{
     .div-navbar{
         width: 100px;
         .navbar{
-            li{
-                list-style-type: none;
-                font-weight: 500;
-                line-height: 120%;
-                margin: 10px;
-                &:hover{
-                    transform: translate(1.25rem);
-                }
-                a{
-                    text-decoration: none;
-                    color: white;
+            ul{
+                padding: 0;
+                margin: 0;
+                li{
+                    list-style-type: none;
+                    font-weight: 500;
+                    line-height: 120%;
+                    margin: 10px;
+                    &:hover{
+                        transform: translate(1.25rem);
+                    }
+                    a{
+                        text-decoration: none;
+                        color: white;
+                    }
                 }
             }
         }
@@ -48,7 +50,7 @@ header{
 }
 
 .header-blog{
+    margin: 5px;
     width: 98%;
     position: absolute;
-    height: 30%;
 }

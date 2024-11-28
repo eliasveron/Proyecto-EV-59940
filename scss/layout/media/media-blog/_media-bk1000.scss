@@ -1,0 +1,28 @@
+@media (max-width:1000px){
+    .body-blog{
+        .header-blog{
+            .div-navbar{
+                padding-right: 30px;
+            }
+        }
+        .contenedor-footer{
+            .div-h3-footer{
+                display: flex;
+                align-items: center;
+                h3{
+                    font-size: 15px;
+                }
+            }
+            .div-p-footer{
+                display: flex;
+                align-items: center;
+                
+                p{
+                    font-size: 12px;
+                }
+            }
+
+        }
+    }
+}
+

@@ -1,69 +1,78 @@
-.contenedor-section-uno{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: black;
-    background-image: url(https://www.wsupercars.com/wallpapers-regular/Formula-1/Williams/2023-Formula1-Williams-FW45-001-2160.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 100vh;
-    .text-focus-in{
-        height: 250px;
-    }
-    h2{
-        color: white;
-        letter-spacing: -.03em;
-        font-weight: 500;
-        line-height: 0%;
-        font-size: 250px;
-    }
-}
-
-.contenedor-section-dos{
-    padding-top: 150px;
-    width: 100%;
-    h2{
-        color: white;
-    }
-    .tracking-in-expand{
+.body-blog{
+    .img-fondo{
+        width: 97vw;
+        height: 100vh;
+        position: absolute;
+        img{
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            object-fit: cover;
+        }
+    };
+    .contenedor-section-uno{
         display: flex;
-        gap: 1.25rem;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding-bottom: 150px;
+        width: 100%;
+        height: 100vh;
+        .text-focus-in{
+            height: 250px;
+            animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+            
+            @keyframes text-focus-in {
+                0% {
+                    filter: blur(12px);
+                opacity: 0;
+                }
+                100% {
+                    filter: blur(0px);
+                opacity: 1;
+                }
+            }
+        }
+        h2{
+            color: white;
+            letter-spacing: -.03em;
+            font-weight: 500;
+            line-height: 0%;
+            font-size: 250px;
+        }
     }
+    
+    .contenedor-section-dos{
+        padding-top: 150px;
+        width: 100%;
+        h2{
+            color: white;
+        }
+        .tracking-in-expand{
+            display: flex;
+            gap: 1.25rem;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 150px;
+        }
+    }
+    
+    .tracking-in-expand {
+        animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    }
+    
+    @keyframes tracking-in-expand {
+        0% {
+        letter-spacing: -0.5em;
+        opacity: 0;
+        }
+        40% {
+        opacity: 0.6;
+        }
+        100% {
+        opacity: 1;
+        }
+    }
+    
 }
 
-.text-focus-in {
-	animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-}
-
-@keyframes text-focus-in {
-    0% {
-        filter: blur(12px);
-    opacity: 0;
-    }
-    100% {
-        filter: blur(0px);
-    opacity: 1;
-    }
-}
-
-.tracking-in-expand {
-	animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
-}
-
-@keyframes tracking-in-expand {
-    0% {
-    letter-spacing: -0.5em;
-    opacity: 0;
-    }
-    40% {
-    opacity: 0.6;
-    }
-    100% {
-    opacity: 1;
-    }
-}
