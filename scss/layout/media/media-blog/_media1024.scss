@@ -1,6 +1,10 @@
 @media (max-width:1024px){
         .body-blog{
+            .img-fondo{
+                width: 96vw;
+            }
             .header-blog{
+                width: 97vw;
                 .div-navbar{
                     padding-left: 700px;
                 }
@@ -57,6 +61,13 @@
                         }
                     }
                 }
+            }
+            .contenedor-footer{
+                    display: flex;
+                    flex-direction: row;
+                    .div-info-footer{
+                        width: 60%;
+                    }
             }
         }
 }

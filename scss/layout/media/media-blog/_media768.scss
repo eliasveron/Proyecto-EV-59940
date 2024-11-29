@@ -1,0 +1,44 @@
+@media (max-width:768px){
+
+    .body-blog{
+        .img-fondo{
+            width: 96vw;
+        }
+        .header-blog{
+            width: 96vw;
+            height: 150px;
+            .div-navbar{
+                padding-left: 400px;
+            }
+        }
+        main{
+            .contenedor-section-uno{
+                .text-focus-in{
+                    height: 110px;
+                    h2{
+                    font-size: 110px;
+                    }
+                }
+            }
+        }
+        .contenedor-footer{
+            .div-logos-footer{
+                display: flex;
+                flex-direction: column;
+                height: 165px;
+                width: 50px;
+                .div-logos-redes{
+                    width: 50px;
+                }
+            }
+            .div-info-footer{
+                display: flex;
+                flex-direction: column;
+                justify-content: end;
+                align-items:end;
+                gap: 0px;
+            }
+            
+        }
+    }
+}

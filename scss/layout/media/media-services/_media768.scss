@@ -1,7 +1,7 @@
 @media(max-width:768px){
 
     header{
-        height: 70px;
+        height: 150px;
         .div-navbar{
             padding-left: 400px;
             width: 120px;
@@ -62,5 +62,24 @@
                 }
             }
         }
+    }
+    .contenedor-footer{
+        .div-logos-footer{
+            display: flex;
+            flex-direction: column;
+            height: 165px;
+            width: 50px;
+            .div-logos-redes{
+                width: 50px;
+            }
+        }
+        .cont-text-footer{
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            align-items:end;
+            gap: 0px;
+        }
+        
     }
 }

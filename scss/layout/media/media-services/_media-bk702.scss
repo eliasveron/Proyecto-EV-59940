@@ -12,7 +12,7 @@
         display: flex;
         .div-logos-footer{
             display: flex;
-            flex-direction: column-reverse;
+            flex-direction: column;
             width: 50px;
             height: 160px;
             .div-logos-redes{
@@ -24,18 +24,15 @@
         .cont-text-footer{
             display: flex;
             flex-direction: column;
-            margin-top: 100px;
-            height: 100px;
+            justify-content: end;
+            align-items:end;
             .div-h3-footer{
                 display: flex;
                 justify-content: flex-end;
-                h3{
-                    font-size: 20px;
-                }
             }
             .div-p-footer{
                 p{
-                    font-size: 15px;
+                    font-size: 12px;
                 }
             }
         }

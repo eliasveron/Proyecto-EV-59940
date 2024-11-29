@@ -2,12 +2,15 @@
 @import url("https://fonts.cdnfonts.com/css/helvetica-neue-5");
 .body-index {
   background-image: url(https://www.wsupercars.com/wallpapers-regular/Formula-1/Red-Bull-Racing/2022-Formula1-Red-Bull-Racing-RB18-007-2160.jpg);
+  width: 100vw;
+  height: 120vh;
+  background-size: cover;
 }
 
 body {
   margin: 20px;
   background-color: black;
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   font-family: "Helvetica Neue", sans-serif;
   text-transform: uppercase;
@@ -79,7 +82,7 @@ header .div-navbar .navbar ul li a {
   color: white;
 }
 header .button-header {
-  margin: 10px 15px 0 0;
+  margin: 10px 0 0;
   background-color: transparent;
   width: 250px;
 }
@@ -247,6 +250,18 @@ header .button-header a h2 {
   line-height: 96%;
   font-size: 3.125rem;
 }
+.contenedor-section-services .cont-presentacion-services .art-text1 {
+  animation: art-text1 0.6s both;
+  animation-iteration-count: 5;
+}
+@keyframes art-text1 {
+  0%, 50%, 100% {
+    opacity: 1;
+  }
+  25%, 75% {
+    opacity: 0;
+  }
+}
 .contenedor-section-services .div-sImg {
   width: 95%;
   height: 100%;
@@ -281,21 +296,20 @@ header .button-header a h2 {
   line-height: 50%;
 }
 
-.art-text1 {
-  animation: blink-1 0.6s both;
-  animation-iteration-count: 5;
+.contenedor-footer .cont-text-footer {
+  display: flex;
+  align-items: center;
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.contenedor-footer .cont-text-footer .div-h3-footer h3 {
+  font-size: 15px;
 }
 
-@keyframes art-text1 {
-  0%, 50%, 100% {
-    opacity: 1;
-  }
-  25%, 75% {
-    opacity: 0;
-  }
-}
 .body-blog .img-fondo {
-  width: 97vw;
+  width: 97.5vw;
   height: 100vh;
   position: absolute;
 }
@@ -307,6 +321,9 @@ header .button-header a h2 {
   object-fit: cover;
 }
 .body-blog .contenedor-section-uno {
+  background-size: cover;
+  background-repeat: no-repeat;
+  object-fit: cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -364,7 +381,25 @@ header .button-header a h2 {
     opacity: 1;
   }
 }
-
+.body-blog .contenedor-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.body-blog .contenedor-footer .div-info-footer {
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.body-blog .contenedor-footer .div-info-footer .div-p-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.body-blog .contenedor-footer .div-logos-footer {
+  height: 55px;
+}
 .body-contact {
   background-image: url(https://cdn.pixabay.com/photo/2018/02/22/18/35/ferrari-458-speciale-3173661_960_720.jpg);
   background-size: cover;
@@ -593,7 +628,7 @@ header .button-header a h2 {
     height: 150px;
   }
   header .div-navbar {
-    padding-left: 500px;
+    padding-left: 700px;
   }
   header .button-header {
     display: none;
@@ -650,22 +685,38 @@ header .button-header a h2 {
     justify-content: flex-end;
     height: 55px;
   }
-  .contenedor-footer .cont-text-footer {
+  .contenedor-footer .div-info-footer {
     width: 70%;
     display: flex;
     justify-content: space-between;
     gap: 20px;
   }
-  .contenedor-footer .cont-text-footer .div-h3-footer {
+  .contenedor-footer .div-info-footer .div-h3-footer {
     display: flex;
     align-items: center;
   }
-  .contenedor-footer .cont-text-footer .div-h3-footer h3 {
+  .contenedor-footer .div-info-footer .div-h3-footer h3 {
     font-size: 15px;
   }
-  .contenedor-footer .cont-text-footer .div-p-footer {
+  .contenedor-footer .div-info-footer .div-p-footer {
     display: flex;
     align-items: center;
+  }
+}
+@media (max-width: 1000px) {
+  header .div-navbar {
+    padding-right: 30px;
+  }
+}
+@media (max-width: 943px) {
+  header .div-navbar {
+    padding-left: 600px;
+    padding-right: 30px;
+  }
+}
+@media (max-width: 842px) {
+  header .div-navbar {
+    padding-left: 470px;
   }
 }
 @media (max-width: 838px) {
@@ -695,13 +746,10 @@ header .button-header a h2 {
     font-size: 25px;
     padding-top: 12px;
   }
-  .contenedor-footer .div-p-footer p {
-    font-size: 10px;
-  }
 }
 @media (max-width: 768px) {
   header {
-    height: 70px;
+    height: 150px;
   }
   header .div-navbar {
     padding-left: 400px;
@@ -756,6 +804,22 @@ header .button-header a h2 {
   .contenedor-section-services .contenedor-cards .div-cards .div-oferts3 {
     width: 50%;
   }
+  .contenedor-footer .div-logos-footer {
+    display: flex;
+    flex-direction: column;
+    height: 165px;
+    width: 50px;
+  }
+  .contenedor-footer .div-logos-footer .div-logos-redes {
+    width: 50px;
+  }
+  .contenedor-footer .cont-text-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+    gap: 0px;
+  }
 }
 @media (max-width: 702px) {
   .contenedor-section-services {
@@ -770,7 +834,7 @@ header .button-header a h2 {
   }
   .contenedor-footer .div-logos-footer {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     width: 50px;
     height: 160px;
   }
@@ -781,23 +845,25 @@ header .button-header a h2 {
   .contenedor-footer .cont-text-footer {
     display: flex;
     flex-direction: column;
-    margin-top: 100px;
-    height: 100px;
+    justify-content: end;
+    align-items: end;
   }
   .contenedor-footer .cont-text-footer .div-h3-footer {
     display: flex;
     justify-content: flex-end;
   }
-  .contenedor-footer .cont-text-footer .div-h3-footer h3 {
-    font-size: 20px;
-  }
   .contenedor-footer .cont-text-footer .div-p-footer p {
-    font-size: 15px;
+    font-size: 12px;
+  }
+}
+@media (max-width: 654px) {
+  header .div-navbar {
+    padding-left: 350px;
   }
 }
 @media (max-width: 644px) {
   header {
-    height: 200px;
+    height: 160px;
   }
   header .div-navbar {
     padding-left: 300px;
@@ -874,6 +940,12 @@ header .button-header a h2 {
   }
 }
 @media (max-width: 1024px) {
+  .body-blog .img-fondo {
+    width: 96vw;
+  }
+  .body-blog .header-blog {
+    width: 97vw;
+  }
   .body-blog .header-blog .div-navbar {
     padding-left: 700px;
   }
@@ -925,6 +997,13 @@ header .button-header a h2 {
     grid-column: 2/3;
     grid-row: 4/5;
   }
+  .body-blog .contenedor-footer {
+    display: flex;
+    flex-direction: row;
+  }
+  .body-blog .contenedor-footer .div-info-footer {
+    width: 60%;
+  }
 }
 @media (max-width: 1000px) {
   .body-blog .header-blog .div-navbar {
@@ -945,6 +1024,17 @@ header .button-header a h2 {
     font-size: 12px;
   }
 }
+@media (max-width: 959px) {
+  .body-blog {
+    margin: 10px;
+  }
+  .body-blog .img-fondo {
+    width: 97.3vw;
+  }
+  .body-blog .contenedor-footer {
+    margin: 10px;
+  }
+}
 @media (max-width: 946px) {
   .body-blog .header-blog .div-navbar {
     padding-left: 600px;
@@ -952,7 +1042,6 @@ header .button-header a h2 {
 }
 @media (max-width: 838px) {
   .body-blog .header-blog .div-navbar {
-    width: 100px;
     padding-left: 470px;
   }
 }
@@ -973,6 +1062,114 @@ header .button-header a h2 {
   }
   .body-blog main .contenedor-section-dos .card-container .card4 {
     height: auto;
+  }
+}
+@media (max-width: 768px) {
+  .body-blog .img-fondo {
+    width: 96vw;
+  }
+  .body-blog .header-blog {
+    width: 96vw;
+    height: 150px;
+  }
+  .body-blog .header-blog .div-navbar {
+    padding-left: 400px;
+  }
+  .body-blog main .contenedor-section-uno .text-focus-in {
+    height: 110px;
+  }
+  .body-blog main .contenedor-section-uno .text-focus-in h2 {
+    font-size: 110px;
+  }
+  .body-blog .contenedor-footer .div-logos-footer {
+    display: flex;
+    flex-direction: column;
+    height: 165px;
+    width: 50px;
+  }
+  .body-blog .contenedor-footer .div-logos-footer .div-logos-redes {
+    width: 50px;
+  }
+  .body-blog .contenedor-footer .div-info-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+    gap: 0px;
+  }
+}
+@media (max-width: 744px) {
+  .body-blog {
+    margin: 10px;
+  }
+  .body-blog .contenedor-footer .div-info-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+  }
+}
+@media (max-width: 654px) {
+  .body-blog .header-blog .div-navbar {
+    padding-left: 350px;
+  }
+}
+@media (max-width: 628px) {
+  .body-blog .header-blog {
+    width: 94vw;
+  }
+  .body-blog .header-blog .div-navbar {
+    padding-left: 300px;
+  }
+  .body-blog main .contenedor-section-uno .text-focus-in {
+    height: 100px;
+  }
+  .body-blog main .contenedor-section-uno .text-focus-in h2 {
+    font-size: 100px;
+  }
+}
+@media (max-width: 598px) {
+  .body-blog main .contenedor-section-dos .card-container {
+    width: 500px;
+    grid-template-columns: repeat(2, 250px);
+    grid-template-rows: repeat(4, 250px);
+  }
+  .body-blog .contenedor-footer .div-info-footer {
+    width: 80%;
+  }
+}
+@media (max-width: 546px) {
+  .body-blog .header-blog .div-navbar {
+    padding-left: 250px;
+  }
+}
+@media (max-width: 538px) {
+  .body-blog main .contenedor-section-uno .text-focus-in h2 {
+    font-size: 90px;
+  }
+  .body-blog main .contenedor-section-dos .tracking-in-expand h2 {
+    font-size: 15px;
+  }
+  .body-blog .contenedor-footer {
+    margin: 10px;
+  }
+}
+@media (max-width: 504px) {
+  .body-blog .header-blog .div-navbar {
+    padding-left: 200px;
+  }
+  .body-blog main .contenedor-section-dos .card-container {
+    width: 400px;
+    grid-template-columns: repeat(2, 200px);
+    grid-template-rows: repeat(4, 200px);
+  }
+  .body-blog main .contenedor-section-dos .card1 .card-info h3, .body-blog main .contenedor-section-dos .card2 .card-info h3, .body-blog main .contenedor-section-dos .card3 .card-info h3, .body-blog main .contenedor-section-dos .card4 .card-info h3 {
+    font-size: 15px;
+  }
+}
+@media (max-width: 480px) {
+  .body-blog main .contenedor-section-uno .text-focus-in h2 {
+    font-size: 80px;
   }
 }
 .contenedor-cards {

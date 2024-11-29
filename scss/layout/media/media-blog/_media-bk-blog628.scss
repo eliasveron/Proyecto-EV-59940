@@ -1,0 +1,20 @@
+@media (max-width:628px){
+    .body-blog{
+        .header-blog{
+            width: 94vw;
+            .div-navbar{
+                padding-left: 300px;
+            }
+        }
+        main{
+            .contenedor-section-uno{
+                .text-focus-in{
+                    height: 100px;
+                    h2{
+                        font-size:100px;
+                    }
+                }
+            }
+        }
+    }
+}

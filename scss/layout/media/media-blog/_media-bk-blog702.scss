@@ -1,0 +1,13 @@
+@media (max-width:744px){
+    .body-blog{
+        margin: 10px;
+        .contenedor-footer{
+            .div-info-footer{
+                display: flex;
+                flex-direction: column;
+                justify-content: end;
+                align-items:end;
+            }
+        }
+    }
+}

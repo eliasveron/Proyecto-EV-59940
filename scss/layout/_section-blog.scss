@@ -1,6 +1,6 @@
 .body-blog{
     .img-fondo{
-        width: 97vw;
+        width: 97.5vw;
         height: 100vh;
         position: absolute;
         img{
@@ -12,6 +12,9 @@
         }
     };
     .contenedor-section-uno{
+        background-size: cover;
+        background-repeat: no-repeat;
+        object-fit: cover;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -73,6 +76,26 @@
         opacity: 1;
         }
     }
-    
+    .contenedor-footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .div-info-footer{
+            width: 60%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            .div-p-footer{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+        .div-logos-footer{
+            height: 55px;
+            .div-logos-redes{
+            }
+        }
+    }
 }
 

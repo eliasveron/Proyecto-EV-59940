@@ -1,0 +1,25 @@
+@media (max-width:504px){
+    .body-blog{
+        .header-blog{
+            .div-navbar{
+                padding-left: 200px;
+            }
+        }
+        main{
+            .contenedor-section-dos{
+                .card-container{
+                    width: 400px;
+                    grid-template-columns: repeat(2, 200px);
+                    grid-template-rows: repeat(4, 200px);
+                }
+                .card1 , .card2 , .card3 , .card4{
+                    .card-info{
+                        h3{
+                            font-size: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

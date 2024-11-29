@@ -1,0 +1,23 @@
+@media (max-width:538px){
+    .body-blog{
+        main{
+            .contenedor-section-uno{
+                .text-focus-in{
+                    h2{
+                        font-size: 90px;
+                    }
+                }
+            }
+            .contenedor-section-dos{
+                .tracking-in-expand{
+                    h2{
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+        .contenedor-footer{
+            margin: 10px;
+        }
+    }
+}
