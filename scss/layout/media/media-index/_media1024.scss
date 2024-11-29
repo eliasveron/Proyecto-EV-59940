@@ -1,0 +1,32 @@
+@media (max-width:1024px){
+    .body-index{
+        main{
+            section{
+                article{
+                    .contenedor-uno{
+                        padding-top: 150px;
+                    }
+                    .contenedor-dos{
+                        h2{
+                            font-size: 1.6vw;
+                        }
+                        p{
+                            font-size: 1.6vw;
+                        }
+                    }
+                    .contenedor-tres{
+                        .titulo-uno{
+                            padding-top: 145px;
+                        }
+
+                    }
+                }
+            }
+        }
+        .contenedor-footer{
+            .div-info-footer{
+                width: 60%;
+            }
+        }
+    }
+}

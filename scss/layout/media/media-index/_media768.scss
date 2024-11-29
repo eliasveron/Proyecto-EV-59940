@@ -1,0 +1,21 @@
+@media(max-width:768px){
+    .contenedor-footer{
+        .div-logos-footer{
+            display: flex;
+            flex-direction: column;
+            height: 165px;
+            width: 50px;
+            .div-logos-redes{
+                width: 50px;
+            }
+        }
+        .div-info-footer{
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            align-items:end;
+            gap: 0px;
+        }
+        
+    }
+}

@@ -2,8 +2,6 @@
 @import url("https://fonts.cdnfonts.com/css/helvetica-neue-5");
 .body-index {
   background-image: url(https://www.wsupercars.com/wallpapers-regular/Formula-1/Red-Bull-Racing/2022-Formula1-Red-Bull-Racing-RB18-007-2160.jpg);
-  width: 100vw;
-  height: 120vh;
   background-size: cover;
 }
 
@@ -116,7 +114,7 @@ header .button-header a h2 {
 .contenedor-dos {
   display: flex;
   justify-content: space-between;
-  width: 50%;
+  width: 57%;
 }
 .contenedor-dos .presentacion-p {
   margin-top: 0px;
@@ -147,6 +145,18 @@ header .button-header a h2 {
   letter-spacing: -0.07em;
   line-height: 96%;
   text-align: center;
+}
+
+.contenedor-footer .div-info-footer {
+  display: flex;
+  align-items: center;
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.contenedor-footer .div-info-footer .div-h3-footer h3 {
+  font-size: 15px;
 }
 
 .text-focus-in {
@@ -1020,9 +1030,6 @@ header .button-header a h2 {
     display: flex;
     align-items: center;
   }
-  .body-blog .contenedor-footer .div-p-footer p {
-    font-size: 12px;
-  }
 }
 @media (max-width: 959px) {
   .body-blog {
@@ -1170,6 +1177,41 @@ header .button-header a h2 {
 @media (max-width: 480px) {
   .body-blog main .contenedor-section-uno .text-focus-in h2 {
     font-size: 80px;
+  }
+}
+@media (max-width: 1024px) {
+  .body-index main section article .contenedor-uno {
+    padding-top: 150px;
+  }
+  .body-index main section article .contenedor-dos h2 {
+    font-size: 1.6vw;
+  }
+  .body-index main section article .contenedor-dos p {
+    font-size: 1.6vw;
+  }
+  .body-index main section article .contenedor-tres .titulo-uno {
+    padding-top: 145px;
+  }
+  .body-index .contenedor-footer .div-info-footer {
+    width: 60%;
+  }
+}
+@media (max-width: 768px) {
+  .contenedor-footer .div-logos-footer {
+    display: flex;
+    flex-direction: column;
+    height: 165px;
+    width: 50px;
+  }
+  .contenedor-footer .div-logos-footer .div-logos-redes {
+    width: 50px;
+  }
+  .contenedor-footer .div-info-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+    gap: 0px;
   }
 }
 .contenedor-cards {
