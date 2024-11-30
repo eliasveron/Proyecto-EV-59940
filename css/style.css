@@ -183,8 +183,6 @@ header .button-header a h2 {
   padding-bottom: 50px;
 }
 .contenedor-section-about .div-bImg {
-  background-image: cover;
-  background-repeat: no-repeat;
   height: auto;
   grid-column: 1/3;
   grid-row: 1/2;
@@ -193,6 +191,9 @@ header .button-header a h2 {
 .contenedor-section-about .div-bImg img {
   width: 100%;
   height: 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  object-fit: cover;
 }
 .contenedor-section-about .titulo-about, .contenedor-section-about .text-focus-in {
   grid-column: 2/4;
