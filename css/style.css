@@ -417,15 +417,16 @@ header .button-header a h2 {
   background-size: cover;
   object-fit: contain;
   background-repeat: no-repeat;
+  /* From Uiverse.io by G4b413l */
 }
-
-.section-contact {
+.body-contact .section-contact {
   display: flex;
   width: 100%;
   height: 100%;
 }
-.section-contact .contenedor-h1 {
-  display: block;
+.body-contact .section-contact .contenedor-h1 {
+  display: flex;
+  flex-direction: column;
   padding-right: 18.75rem;
   width: 50vw;
   color: white;
@@ -434,35 +435,70 @@ header .button-header a h2 {
   letter-spacing: -0.07em;
   line-height: 96%;
 }
-.section-contact .contenedor-h1 .h2-1 {
+.body-contact .section-contact .contenedor-h1 .h2-1 {
   width: 100%;
   display: flex;
   justify-content: end;
-  padding-bottom: 30px;
-  height: 70px;
+  align-items: center;
+  height: 62px;
 }
-.section-contact .contenedor-h1 .h2-2 {
+.body-contact .section-contact .contenedor-h1 .h2-1 h2 {
+  margin: 0;
+  font-size: 3.4vw;
+}
+.body-contact .section-contact .contenedor-h1 .h2-2 {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  gap: 2px;
+}
+.body-contact .section-contact .contenedor-h1 .h2-2 .text-h2-1 {
+  width: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 62px;
+}
+.body-contact .section-contact .contenedor-h1 .h2-2 .text-h2-1 h2 {
+  margin: 0px;
+  font-size: 3.4vw;
+}
+.body-contact .section-contact .contenedor-h1 .h2-2 .text-h2-2 {
+  width: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 62px;
+}
+.body-contact .section-contact .contenedor-h1 .h2-2 .text-h2-2 h2 {
+  margin: 0px;
+  font-size: 3.4vw;
+}
+.body-contact .section-contact .contenedor-h1 .h2-2 .text-h2-3 {
+  width: 257px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 62px;
+}
+.body-contact .section-contact .contenedor-h1 .h2-2 .text-h2-3 h2 {
+  margin: 0px;
+  font-size: 3.4vw;
+}
+.body-contact .section-contact .contenedor-h1 .h2-3 {
   width: 100%;
   display: flex;
   justify-content: end;
-  padding-bottom: 30px;
-  height: 70px;
+  align-items: center;
+  height: 62px;
 }
-.section-contact .contenedor-h1 .h2-3 {
-  width: 100%;
-  display: flex;
-  justify-content: end;
-  padding-bottom: 30px;
-  height: 70px;
+.body-contact .section-contact .contenedor-h1 .h2-3 h2 {
+  margin: 0px;
+  font-size: 3.4vw;
+  letter-spacing: -0.05em;
 }
-.section-contact .contenedor-h1 .h2-4 {
-  width: 100%;
-  display: flex;
-  justify-content: end;
-  padding-bottom: 30px;
-  height: 70px;
-}
-.section-contact .contenedor-h1 {
+.body-contact .section-contact .contenedor-h1 {
   animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
 }
 @keyframes contenedor-h1 {
@@ -477,12 +513,12 @@ header .button-header a h2 {
     opacity: 1;
   }
 }
-.section-contact .contenedor-formulario .group {
+.body-contact .section-contact .contenedor-formulario .group {
   position: relative;
   height: 150px;
   width: 500px;
 }
-.section-contact .contenedor-formulario .input {
+.body-contact .section-contact .contenedor-formulario .input {
   font-size: 16px;
   padding: 10px 10px 10px 5px;
   display: block;
@@ -491,10 +527,10 @@ header .button-header a h2 {
   border-bottom: 1px solid #515151;
   background: transparent;
 }
-.section-contact .contenedor-formulario .input:focus {
+.body-contact .section-contact .contenedor-formulario .input:focus {
   outline: none;
 }
-.section-contact .contenedor-formulario label {
+.body-contact .section-contact .contenedor-formulario label {
   color: white;
   font-size: 18px;
   font-weight: normal;
@@ -506,17 +542,17 @@ header .button-header a h2 {
   -moz-transition: 0.2s ease all;
   -webkit-transition: 0.2s ease all;
 }
-.section-contact .contenedor-formulario .input:focus ~ label, .section-contact .contenedor-formulario .input:valid ~ label {
+.body-contact .section-contact .contenedor-formulario .input:focus ~ label, .body-contact .section-contact .contenedor-formulario .input:valid ~ label {
   top: -20px;
   font-size: 14px;
   color: #5264AE;
 }
-.section-contact .contenedor-formulario .bar {
+.body-contact .section-contact .contenedor-formulario .bar {
   position: relative;
   display: block;
   width: 200px;
 }
-.section-contact .contenedor-formulario .bar:before, .section-contact .contenedor-formulario .bar:after {
+.body-contact .section-contact .contenedor-formulario .bar:before, .body-contact .section-contact .contenedor-formulario .bar:after {
   content: "";
   height: 2px;
   width: 0;
@@ -527,16 +563,16 @@ header .button-header a h2 {
   -moz-transition: 0.2s ease all;
   -webkit-transition: 0.2s ease all;
 }
-.section-contact .contenedor-formulario .bar:before {
+.body-contact .section-contact .contenedor-formulario .bar:before {
   left: 50%;
 }
-.section-contact .contenedor-formulario .bar:after {
+.body-contact .section-contact .contenedor-formulario .bar:after {
   right: 50%;
 }
-.section-contact .contenedor-formulario .input:focus ~ .bar:before, .section-contact .contenedor-formulario .input:focus ~ .bar:after {
+.body-contact .section-contact .contenedor-formulario .input:focus ~ .bar:before, .body-contact .section-contact .contenedor-formulario .input:focus ~ .bar:after {
   width: 50%;
 }
-.section-contact .contenedor-formulario .highlight {
+.body-contact .section-contact .contenedor-formulario .highlight {
   position: absolute;
   height: 60%;
   width: 100px;
@@ -545,7 +581,7 @@ header .button-header a h2 {
   pointer-events: none;
   opacity: 0.5;
 }
-.section-contact .contenedor-formulario .input:focus ~ .highlight {
+.body-contact .section-contact .contenedor-formulario .input:focus ~ .highlight {
   animation: inputHighlighter 0.3s ease;
 }
 @keyframes inputHighlighter {
@@ -557,28 +593,26 @@ header .button-header a h2 {
     background: transparent;
   }
 }
-.section-contact .contenedor-formulario .contenedor-chooseFile {
+.body-contact .section-contact .contenedor-formulario .contenedor-chooseFile {
   display: flex;
   justify-content: space-between;
 }
-.section-contact .contenedor-formulario .contenedor-chooseFile .cont-h3-attachcv {
+.body-contact .section-contact .contenedor-formulario .contenedor-chooseFile .cont-h3-attachcv {
   color: white;
 }
-.section-contact .contenedor-formulario .contenedor-chooseFile .cont-buttom-attachcv {
+.body-contact .section-contact .contenedor-formulario .contenedor-chooseFile .cont-buttom-attachcv {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
-/* From Uiverse.io by G4b413l */
-.contenedor-disclaimer {
+.body-contact .contenedor-disclaimer {
   width: 50vw;
   padding-top: 40px;
   padding-right: 18.75rem;
   display: flex;
   justify-content: space-between;
 }
-.contenedor-disclaimer .text-shadow-pop-left h1 {
+.body-contact .contenedor-disclaimer .text-shadow-pop-left h3 {
   margin: 0.3125rem;
   color: #ffffff;
   letter-spacing: -0.03em;
@@ -586,7 +620,7 @@ header .button-header a h2 {
   line-height: 96%;
   font-size: 1.25rem;
 }
-.contenedor-disclaimer .text-shadow-pop-left p {
+.body-contact .contenedor-disclaimer .text-shadow-pop-left p {
   margin: 0.3125rem;
   color: #ffffff;
   letter-spacing: -0.03em;
@@ -594,34 +628,8 @@ header .button-header a h2 {
   line-height: 96%;
   font-size: 1.25rem;
 }
-
-.text-shadow-pop-left {
-  -webkit-animation: text-shadow-pop-left 0.6s both;
+.body-contact .text-shadow-pop-left {
   animation: text-shadow-pop-left 0.6s both;
-}
-
-/* ----------------------------------------------
- * Generated by Animista on 2024-11-27 12:29:42
- * Licensed under FreeBSD License.
- * See http://animista.net/license for more info. 
- * w: http://animista.net, t: @cssanimista
- * ---------------------------------------------- */
-/**
- * ----------------------------------------
- * animation text-shadow-pop-left
- * ----------------------------------------
- */
-@-webkit-keyframes text-shadow-pop-left {
-  0% {
-    text-shadow: 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555;
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-  }
-  100% {
-    text-shadow: -1px 0 #555555, -2px 0 #555555, -3px 0 #555555, -4px 0 #555555, -5px 0 #555555, -6px 0 #555555, -7px 0 #555555, -8px 0 #555555;
-    -webkit-transform: translateX(8px);
-    transform: translateX(8px);
-  }
 }
 @keyframes text-shadow-pop-left {
   0% {
@@ -635,6 +643,18 @@ header .button-header a h2 {
     transform: translateX(8px);
   }
 }
+.body-contact .contenedor-footer .div-info-footer {
+  display: flex;
+  align-items: center;
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.body-contact .contenedor-footer .div-info-footer .div-h3-footer h3 {
+  font-size: 15px;
+}
+
 @media (max-width: 1024px) {
   header {
     height: 150px;
@@ -1288,6 +1308,221 @@ header .button-header a h2 {
 @media (max-width: 480px) {
   .body-index main section article .contenedor-info-middle .contenedor-dos .presentacion-p {
     line-height: 140%;
+  }
+}
+@media (max-width: 1024px) {
+  .body-contact main {
+    margin-bottom: 140px;
+  }
+  .body-contact main .section-contact {
+    margin-top: 50px;
+  }
+  .body-contact main .section-contact .contenedor-h1 {
+    padding-right: 90px;
+    display: flex;
+    width: 40%;
+    flex-direction: column;
+    align-items: flex-end;
+    line-height: 96%;
+  }
+  .body-contact main .section-contact .contenedor-h1 .h2-1 {
+    height: 40px;
+    width: 240px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .body-contact main .section-contact .contenedor-h1 .h2-1 h2 {
+    margin: 0;
+    font-size: 3.8vw;
+    letter-spacing: -0.03em;
+  }
+  .body-contact main .section-contact .contenedor-h1 .h2-2 {
+    height: 40px;
+    width: 400px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .body-contact main .section-contact .contenedor-h1 .h2-2 .text-h2-1 {
+    padding-bottom: 0;
+    height: 40px;
+    width: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .body-contact main .section-contact .contenedor-h1 .h2-2 .text-h2-1 h2 {
+    margin: 0;
+    font-size: 3.8vw;
+    letter-spacing: -0.03em;
+  }
+  .body-contact main .section-contact .contenedor-h1 .h2-2 .text-h2-2 {
+    padding-bottom: 0;
+    height: 40px;
+    width: 190px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .body-contact main .section-contact .contenedor-h1 .h2-2 .text-h2-2 h2 {
+    margin: 0;
+    font-size: 3.8vw;
+    letter-spacing: -0.03em;
+  }
+  .body-contact main .section-contact .contenedor-h1 .h2-2 .text-h2-3 {
+    padding-bottom: 0;
+    height: 40px;
+    width: 280px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+  }
+  .body-contact main .section-contact .contenedor-h1 .h2-2 .text-h2-3 h2 {
+    margin: 0;
+    font-size: 3.8vw;
+    letter-spacing: -0.01em;
+  }
+  .body-contact main .section-contact .contenedor-h1 .h2-3 {
+    height: 40px;
+    width: 240px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .body-contact main .section-contact .contenedor-h1 .h2-3 h2 {
+    margin: 0;
+    font-size: 3.8vw;
+    letter-spacing: -0.03em;
+  }
+  .body-contact main .section-contact .contenedor-formulario {
+    width: 50%;
+  }
+  .body-contact main .section-contact .contenedor-formulario form .group {
+    width: 100%;
+    height: 100px;
+  }
+  .body-contact main section .contenedor-disclaimer {
+    padding-right: 0px;
+    padding-top: 60px;
+    margin-bottom: 50px;
+  }
+}
+@media (max-width: 989px) {
+  .body-contact main .section-contact .contenedor-h1 .h2-2 {
+    height: 125px;
+    display: flex;
+    flex-direction: column;
+  }
+  .body-contact main .section-contact .contenedor-h1 .h2-2 .text-h2-1 {
+    width: 100%;
+    justify-content: end;
+  }
+  .body-contact main .section-contact .contenedor-h1 .h2-2 .text-h2-2 {
+    width: 100%;
+    justify-content: end;
+  }
+  .body-contact main .section-contact .contenedor-h1 .h2-2 .text-h2-3 {
+    width: 100%;
+    justify-content: end;
+  }
+  .body-contact main section .contenedor-disclaimer .text-shadow-pop-left h3, .body-contact main section .contenedor-disclaimer .text-shadow-pop-left p {
+    font-size: 1.5vw;
+  }
+}
+@media (max-width: 768px) {
+  .body-contact .contenedor-footer .div-info-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+    gap: 0px;
+  }
+}
+@media (max-width: 570px) {
+  .body-contact main {
+    margin-bottom: 40px;
+  }
+  .body-contact main .section-contact {
+    display: flex;
+    flex-direction: column;
+  }
+  .body-contact main .section-contact .contenedor-h1 {
+    padding-right: 0px;
+    margin-bottom: 80px;
+    width: 100%;
+  }
+  .body-contact main .section-contact .contenedor-h1 .h2-1 h2 {
+    font-size: 6.4vw;
+  }
+  .body-contact main .section-contact .contenedor-h1 .h2-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: end;
+    height: 40px;
+    gap: 10px;
+  }
+  .body-contact main .section-contact .contenedor-h1 .h2-2 .text-h2-1 {
+    width: auto;
+  }
+  .body-contact main .section-contact .contenedor-h1 .h2-2 .text-h2-1 h2 {
+    font-size: 6.4vw;
+  }
+  .body-contact main .section-contact .contenedor-h1 .h2-2 .text-h2-2 {
+    width: auto;
+  }
+  .body-contact main .section-contact .contenedor-h1 .h2-2 .text-h2-2 h2 {
+    font-size: 6.4vw;
+  }
+  .body-contact main .section-contact .contenedor-h1 .h2-2 .text-h2-3 {
+    width: auto;
+  }
+  .body-contact main .section-contact .contenedor-h1 .h2-2 .text-h2-3 h2 {
+    font-size: 6.4vw;
+  }
+  .body-contact main .section-contact .contenedor-h1 .h2-3 h2 {
+    font-size: 6.4vw;
+  }
+  .body-contact main .section-contact .contenedor-formulario {
+    width: 100%;
+  }
+  .body-contact main .section-contact .contenedor-formulario form .group .input {
+    width: 100%;
+    padding-right: 0px;
+    padding-left: 0px;
+    color: white;
+  }
+  .body-contact main .section-contact .contenedor-formulario form .group .bar {
+    width: 100%;
+  }
+  .body-contact main .section-contact .contenedor-formulario form .contenedor-chooseFile {
+    width: 80%;
+    padding-left: 7.4vw;
+  }
+  .body-contact main section .contenedor-disclaimer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 0px;
+    margin-top: 50px;
+    padding-top: 0px;
+    align-items: center;
+  }
+  .body-contact main section .contenedor-disclaimer .text-shadow-pop-left h3, .body-contact main section .contenedor-disclaimer .text-shadow-pop-left p {
+    font-size: 3.2vw;
+  }
+}
+@media (max-width: 524px) {
+  .body-contact .contenedor-footer .div-info-footer .div-p-footer p {
+    font-size: 2.4vw;
   }
 }
 .contenedor-cards {

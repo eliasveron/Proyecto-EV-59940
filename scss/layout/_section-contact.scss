@@ -4,250 +4,278 @@
     object-fit: contain;
     background-repeat: no-repeat;
 
-}
-
-.section-contact{
-    display: flex;
-    width: 100%;
-    height: 100%;
-    .contenedor-h1{
-        display: block;
-        padding-right: 18.75rem;
-        width: 50vw;
-        color: white;
-        font-size: 4.375rem;
-        font-weight: 500;
-        letter-spacing: -.07em;
-        line-height: 96%;
-        .h2-1{
-            width: 100%;
+    .section-contact{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        .contenedor-h1{
             display: flex;
-            justify-content: end;
-            padding-bottom: 30px;
-            height: 70px;
-        }
-        
-        .h2-2{
-            width: 100%;
-            display: flex;
-            justify-content: end;
-            padding-bottom: 30px;
-            height: 70px;
-        }
-        
-        .h2-3{
-            width: 100%;
-            display: flex;
-            justify-content: end;
-            padding-bottom: 30px;
-            height: 70px;
-        }
-        
-        .h2-4{
-            width: 100%;
-            display: flex;
-            justify-content: end;
-            padding-bottom: 30px;
-            height: 70px;
-        }
-    }
-
-    .contenedor-h1 {
-        animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-    }
-    
-      @keyframes contenedor-h1 {
-        0% {
-          -webkit-filter: blur(12px);
-                  filter: blur(12px);
-          opacity: 0;
-        }
-        100% {
-          -webkit-filter: blur(0px);
-                  filter: blur(0px);
-          opacity: 1;
-        }
-      }
-    .contenedor-formulario{
-        .group {
-            position: relative;
-            height: 150px;
-            width: 500px;
-        }
-        
-        .input {
-            font-size: 16px;
-            padding: 10px 10px 10px 5px;
-            display: block;
-            width: 200px;
-            border: none;
-            border-bottom: 1px solid #515151;
-            background: transparent;
-        }
-        
-        .input:focus {
-            outline: none;
-        }
-        
-        label {
+            flex-direction: column;
+            padding-right: 18.75rem;
+            width: 50vw;
             color: white;
-            font-size: 18px;
-            font-weight: normal;
-            position: absolute;
-            pointer-events: none;
-            left: 5px;
-            top: 10px;
-            transition: 0.2s ease all;
-            -moz-transition: 0.2s ease all;
-            -webkit-transition: 0.2s ease all;
-        }
-        
-        .input:focus ~ label, .input:valid ~ label {
-            top: -20px;
-            font-size: 14px;
-            color: #5264AE;
-        }
-        
-        .bar {
-            position: relative;
-            display: block;
-            width: 200px;
-        }
-        
-        .bar:before, .bar:after {
-            content: '';
-            height: 2px;
-            width: 0;
-            bottom: 1px;
-            position: absolute;
-            background: #5264AE;
-            transition: 0.2s ease all;
-            -moz-transition: 0.2s ease all;
-            -webkit-transition: 0.2s ease all;
-        }
-        
-        .bar:before {
-            left: 50%;
-        }
-        
-        .bar:after {
-            right: 50%;
-        }
-        
-        .input:focus ~ .bar:before, .input:focus ~ .bar:after {
-            width: 50%;
-        }
-        
-        .highlight {
-            position: absolute;
-            height: 60%;
-            width: 100px;
-            top: 25%;
-            left: 0;
-            pointer-events: none;
-            opacity: 0.5;
-        }
-        
-        .input:focus ~ .highlight {
-            animation: inputHighlighter 0.3s ease;
-        }
-        
-        @keyframes inputHighlighter {
-            from {
-            background: #5264AE;
-            }
-        
-            to {
-            width: 0;
-            background: transparent;
-            }
-        }
-    
-            .contenedor-chooseFile{
+            font-size: 4.375rem;
+            font-weight: 500;
+            letter-spacing: -.07em;
+            line-height: 96%;
+            .h2-1{
+                width: 100%;
                 display: flex;
-                justify-content: space-between;
-                .cont-h3-attachcv{
-                    color: white;
+                justify-content: end;
+                align-items: center;
+                height: 62px;
+                h2{
+                    margin: 0;
+                    font-size: 3.4vw;
                 }
-                .cont-buttom-attachcv{
+            }
+            
+            .h2-2{
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: end;
+                gap: 2px;
+                .text-h2-1{
+                    width: 160px;
                     display: flex;
                     justify-content: center;
                     align-items: center;
+                    height: 62px;
+                    h2{
+                        margin: 0px;
+                        font-size: 3.4vw;
+                    }
+                }
+                .text-h2-2{
+                    width: 180px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 62px;
+                    h2{
+                        margin: 0px;
+                        font-size: 3.4vw;
+                    }
+                }
+                .text-h2-3{
+                    width: 257px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 62px;
+                    h2{
+                        margin: 0px;
+                        font-size: 3.4vw;
+                    }
+                }
+            }
+            
+            .h2-3{
+                width: 100%;
+                display: flex;
+                justify-content: end;
+                align-items: center;
+                height: 62px;
+                h2{
+                    margin: 0px;
+                    font-size: 3.4vw;
+                    letter-spacing: -.05em;
                 }
             }
         }
-    }
-
-/* From Uiverse.io by G4b413l */ 
-
-
-.contenedor-disclaimer{
-    width: 50vw;
-    padding-top: 40px;
-    padding-right: 18.75rem;
-    display: flex;
-    justify-content: space-between;
-    .text-shadow-pop-left{
-        h1{
-            margin: .3125rem;
-            color:map-get($colorsFonts , Secundario );
-            letter-spacing: -.03em;
-            font-weight: 500;
-            line-height: 96%;
-            font-size: 1.25rem;
+    
+        .contenedor-h1 {
+            animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+        }
+        
+          @keyframes contenedor-h1 {
+            0% {
+              -webkit-filter: blur(12px);
+                      filter: blur(12px);
+              opacity: 0;
+            }
+            100% {
+              -webkit-filter: blur(0px);
+                      filter: blur(0px);
+              opacity: 1;
+            }
+          }
+        .contenedor-formulario{
+            .group {
+                position: relative;
+                height: 150px;
+                width: 500px;
+            }
+            
+            .input {
+                font-size: 16px;
+                padding: 10px 10px 10px 5px;
+                display: block;
+                width: 200px;
+                border: none;
+                border-bottom: 1px solid #515151;
+                background: transparent;
+            }
+            
+            .input:focus {
+                outline: none;
+            }
+            
+            label {
+                color: white;
+                font-size: 18px;
+                font-weight: normal;
+                position: absolute;
+                pointer-events: none;
+                left: 5px;
+                top: 10px;
+                transition: 0.2s ease all;
+                -moz-transition: 0.2s ease all;
+                -webkit-transition: 0.2s ease all;
+            }
+            
+            .input:focus ~ label, .input:valid ~ label {
+                top: -20px;
+                font-size: 14px;
+                color: #5264AE;
+            }
+            
+            .bar {
+                position: relative;
+                display: block;
+                width: 200px;
+            }
+            
+            .bar:before, .bar:after {
+                content: '';
+                height: 2px;
+                width: 0;
+                bottom: 1px;
+                position: absolute;
+                background: #5264AE;
+                transition: 0.2s ease all;
+                -moz-transition: 0.2s ease all;
+                -webkit-transition: 0.2s ease all;
+            }
+            
+            .bar:before {
+                left: 50%;
+            }
+            
+            .bar:after {
+                right: 50%;
+            }
+            
+            .input:focus ~ .bar:before, .input:focus ~ .bar:after {
+                width: 50%;
+            }
+            
+            .highlight {
+                position: absolute;
+                height: 60%;
+                width: 100px;
+                top: 25%;
+                left: 0;
+                pointer-events: none;
+                opacity: 0.5;
+            }
+            
+            .input:focus ~ .highlight {
+                animation: inputHighlighter 0.3s ease;
+            }
+            
+            @keyframes inputHighlighter {
+                from {
+                background: #5264AE;
+                }
+            
+                to {
+                width: 0;
+                background: transparent;
+                }
+            }
+        
+                .contenedor-chooseFile{
+                    display: flex;
+                    justify-content: space-between;
+                    .cont-h3-attachcv{
+                        color: white;
+                    }
+                    .cont-buttom-attachcv{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                }
+            }
+        }
+    
+    /* From Uiverse.io by G4b413l */ 
+    
+    
+    .contenedor-disclaimer{
+        width: 50vw;
+        padding-top: 40px;
+        padding-right: 18.75rem;
+        display: flex;
+        justify-content: space-between;
+        .text-shadow-pop-left{
+            h3{
+                margin: .3125rem;
+                color:map-get($colorsFonts , Secundario );
+                letter-spacing: -.03em;
+                font-weight: 500;
+                line-height: 96%;
+                font-size: 1.25rem;
+            }
+        }
+        .text-shadow-pop-left{
+            p{
+                margin: .3125rem;
+                color:map-get($colorsFonts , Secundario );
+                letter-spacing: -.03em;
+                font-weight: 500;
+                line-height: 96%;
+                font-size: 1.25rem;
+            }
         }
     }
-    .text-shadow-pop-left{
-        p{
-            margin: .3125rem;
-            color:map-get($colorsFonts , Secundario );
-            letter-spacing: -.03em;
-            font-weight: 500;
-            line-height: 96%;
-            font-size: 1.25rem;
+    
+    .text-shadow-pop-left {
+        animation: text-shadow-pop-left 0.6s both;
+    }
+    @keyframes text-shadow-pop-left {
+        0% {
+            text-shadow: 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555;
+            -webkit-transform: translateX(0);
+            transform: translateX(0);
         }
+        100% {
+        text-shadow: -1px 0 #555555, -2px 0 #555555, -3px 0 #555555, -4px 0 #555555, -5px 0 #555555, -6px 0 #555555, -7px 0 #555555, -8px 0 #555555;
+        -webkit-transform: translateX(8px);
+                transform: translateX(8px);
+        }
+    }   
+
+    .contenedor-footer{
+        .div-info-footer{
+            display: flex;
+            align-items: center;
+            .div-h3-footer{
+                h3{
+                    font-size: 15px;
+                }
+                
+            }
+            width: 60%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+        }
+    
     }
+
 }
 
-.text-shadow-pop-left {
-	-webkit-animation: text-shadow-pop-left 0.6s both;
-	        animation: text-shadow-pop-left 0.6s both;
-}
 
-/* ----------------------------------------------
- * Generated by Animista on 2024-11-27 12:29:42
- * Licensed under FreeBSD License.
- * See http://animista.net/license for more info. 
- * w: http://animista.net, t: @cssanimista
- * ---------------------------------------------- */
-
-/**
- * ----------------------------------------
- * animation text-shadow-pop-left
- * ----------------------------------------
- */
- @-webkit-keyframes text-shadow-pop-left {
-    0% {
-      text-shadow: 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555;
-      -webkit-transform: translateX(0);
-              transform: translateX(0);
-    }
-    100% {
-      text-shadow: -1px 0 #555555, -2px 0 #555555, -3px 0 #555555, -4px 0 #555555, -5px 0 #555555, -6px 0 #555555, -7px 0 #555555, -8px 0 #555555;
-      -webkit-transform: translateX(8px);
-              transform: translateX(8px);
-    }
-  }
-  @keyframes text-shadow-pop-left {
-    0% {
-      text-shadow: 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555;
-      -webkit-transform: translateX(0);
-              transform: translateX(0);
-    }
-    100% {
-      text-shadow: -1px 0 #555555, -2px 0 #555555, -3px 0 #555555, -4px 0 #555555, -5px 0 #555555, -6px 0 #555555, -7px 0 #555555, -8px 0 #555555;
-      -webkit-transform: translateX(8px);
-              transform: translateX(8px);
-    }
-  }
-  

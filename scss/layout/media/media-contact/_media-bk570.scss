@@ -1,0 +1,89 @@
+@media(max-width:570px){
+    .body-contact{
+        main{
+            margin-bottom: 40px;
+            .section-contact{
+                display: flex;
+                flex-direction: column;
+                .contenedor-h1{
+                    padding-right: 0px;
+                    margin-bottom: 80px;
+                    width: 100%;
+                    .h2-1{
+                        h2{
+                            font-size: 6.4vw;
+                        }
+                    }
+                    .h2-2{
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: end;
+                        align-items: end;
+                        height: 40px;
+                        gap: 10px;
+                        .text-h2-1{
+                            width: auto;
+                            h2{
+                                font-size: 6.4vw;
+                            }
+                        }
+                        .text-h2-2{
+                            width: auto;
+                            h2{
+                                font-size: 6.4vw;
+                            }
+                        }
+                        .text-h2-3{
+                            width: auto;
+                            h2{
+                                font-size: 6.4vw;
+                            }
+                        }
+                    }
+                    .h2-3{
+                        h2{
+                            font-size: 6.4vw;
+                        }
+                    }
+                }
+                .contenedor-formulario{
+                    width: 100%;
+                    form{
+                        .group{
+                            .input{
+                                width: 100%;
+                                padding-right: 0px;
+                                padding-left: 0px;
+                                color: white;
+                            }
+                            .bar{
+                                width: 100%;
+                            }
+                        }
+                        .contenedor-chooseFile{
+                            width: 80%;
+                            padding-left: 7.4vw;
+                        }
+                    }
+                }
+            }
+            section{
+                .contenedor-disclaimer{
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 30px;
+                    margin-bottom: 0px;
+                    margin-top: 50px;
+                    padding-top: 0px;
+                    align-items: center;
+                    .text-shadow-pop-left{
+                        h3 , p{
+                            font-size: 3.2vw;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

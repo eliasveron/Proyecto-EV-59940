@@ -1,0 +1,13 @@
+@media(max-width:768px){
+    .body-contact{
+        .contenedor-footer{
+            .div-info-footer{
+                display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+    gap: 0px;
+            }
+        }
+    }
+}

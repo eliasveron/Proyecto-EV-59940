@@ -1,0 +1,36 @@
+@media(max-width:989px){
+    .body-contact{
+        main{
+            .section-contact{
+                .contenedor-h1{
+                    .h2-2{
+                        height: 125px;
+                        display: flex;
+                        flex-direction: column;
+                        .text-h2-1{
+                            width: 100%;
+                            justify-content: end;
+                        }
+                        .text-h2-2{
+                            width: 100%;
+                            justify-content: end;
+                        }
+                        .text-h2-3{
+                            width: 100%;
+                            justify-content: end;
+                        }
+                    }
+                }
+            }
+            section{
+                .contenedor-disclaimer{
+                    .text-shadow-pop-left{
+                        h3 , p{
+                            font-size: 1.5vw;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
