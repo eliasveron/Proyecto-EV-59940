@@ -97,12 +97,12 @@ header .button-header a h2 {
   position: absolute;
 }
 
-.contenedor-uno {
+.contenedor-info-middle {
   display: flex;
   justify-content: space-between;
   height: 200px;
 }
-.contenedor-uno .contenedor-h2 .titulo-dos {
+.contenedor-info-middle .contenedor-h2 .titulo-dos {
   margin-top: 0px;
   margin-bottom: 0px;
   letter-spacing: -0.03em;
@@ -120,7 +120,7 @@ header .button-header a h2 {
   margin-top: 0px;
   letter-spacing: -0.03em;
   font-weight: 500;
-  line-height: 99%;
+  line-height: 130%;
   font-size: 1.2vw;
   color: white;
 }
@@ -129,14 +129,15 @@ header .button-header a h2 {
   margin-left: 30px;
   letter-spacing: -0.03em;
   font-weight: 500;
-  line-height: 96%;
+  line-height: 130%;
   font-size: 1.2vw;
   color: white;
 }
 
 .contenedor-tres {
   width: 100%;
-  height: 300px;
+  height: 200px;
+  padding-top: 230px;
 }
 .contenedor-tres .titulo-uno {
   color: white;
@@ -145,6 +146,7 @@ header .button-header a h2 {
   letter-spacing: -0.07em;
   line-height: 96%;
   text-align: center;
+  margin: 0;
 }
 
 .contenedor-footer .div-info-footer {
@@ -1180,8 +1182,12 @@ header .button-header a h2 {
   }
 }
 @media (max-width: 1024px) {
-  .body-index main section article .contenedor-uno {
+  .body-index main {
+    height: 80vh;
+  }
+  .body-index main section article .contenedor-info-middle {
     padding-top: 150px;
+    height: 25.1vh;
   }
   .body-index main section article .contenedor-dos h2 {
     font-size: 1.6vw;
@@ -1189,29 +1195,99 @@ header .button-header a h2 {
   .body-index main section article .contenedor-dos p {
     font-size: 1.6vw;
   }
+  .body-index main section article .contenedor-tres {
+    height: 200px;
+  }
   .body-index main section article .contenedor-tres .titulo-uno {
-    padding-top: 145px;
+    margin: 0px;
+  }
+  .body-index .contenedor-footer {
+    margin-top: 50px;
   }
   .body-index .contenedor-footer .div-info-footer {
     width: 60%;
   }
 }
+@media (max-width: 914px) {
+  .body-index {
+    height: 100%;
+  }
+  .body-index main section article .contenedor-info-middle {
+    padding-top: 260px;
+    height: 40vh;
+  }
+  .body-index main section article .contenedor-info-middle .contenedor-h2 {
+    width: 220px;
+  }
+  .body-index main section article .contenedor-info-middle .contenedor-dos .presentacion-dos {
+    font-size: 1.8vw;
+  }
+  .body-index main section article .contenedor-info-middle .contenedor-dos .presentacion-p {
+    font-size: 1.8vw;
+  }
+  .body-index main section article .contenedor-tres {
+    padding-top: 0px;
+  }
+  .body-index main section article .contenedor-tres .titulo-uno {
+    margin: 0;
+  }
+}
 @media (max-width: 768px) {
-  .contenedor-footer .div-logos-footer {
+  .body-index main section article .contenedor-info-middle {
+    padding-top: 150px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 120px;
+  }
+  .body-index main section article .contenedor-info-middle .contenedor-h2 {
+    width: 340px;
+  }
+  .body-index main section article .contenedor-info-middle .contenedor-h2 .titulo-dos {
+    font-size: 6.4vw;
+    line-height: 110%;
+  }
+  .body-index main section article .contenedor-info-middle .contenedor-dos {
+    width: 93vw;
+    display: flex;
+    justify-content: space-between;
+  }
+  .body-index main section article .contenedor-info-middle .contenedor-dos .presentacion-dos {
+    font-size: 2.9vw;
+    margin: 0px;
+  }
+  .body-index main section article .contenedor-info-middle .contenedor-dos .presentacion-p {
+    font-size: 2.9vw;
+    margin: 0px;
+  }
+  .body-index main section article .contenedor-tres {
+    height: 100px;
+  }
+  .body-index .contenedor-footer .div-logos-footer {
     display: flex;
     flex-direction: column;
     height: 165px;
     width: 50px;
   }
-  .contenedor-footer .div-logos-footer .div-logos-redes {
+  .body-index .contenedor-footer .div-logos-footer .div-logos-redes {
     width: 50px;
   }
-  .contenedor-footer .div-info-footer {
+  .body-index .contenedor-footer .div-info-footer {
     display: flex;
     flex-direction: column;
     justify-content: end;
     align-items: end;
     gap: 0px;
+  }
+}
+@media (max-width: 524px) {
+  .body-index .contenedor-footer .div-info-footer .div-p-footer p {
+    font-size: 2.6vw;
+  }
+}
+@media (max-width: 480px) {
+  .body-index main section article .contenedor-info-middle .contenedor-dos .presentacion-p {
+    line-height: 140%;
   }
 }
 .contenedor-cards {

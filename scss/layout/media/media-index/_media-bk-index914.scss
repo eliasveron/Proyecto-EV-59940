@@ -1,0 +1,32 @@
+@media(max-width:914px){
+    .body-index{
+        height: 100%;
+        main{
+            section{
+                article{
+                    .contenedor-info-middle{
+                        padding-top: 260px;
+                        height: 40vh;
+                        .contenedor-h2{
+                            width: 220px;
+                        }
+                        .contenedor-dos{
+                            .presentacion-dos{
+                                font-size: 1.8vw;
+                            }
+                            .presentacion-p{
+                                font-size: 1.8vw;
+                            }
+                        }
+                    }
+                    .contenedor-tres{
+                        padding-top: 0px;
+                        .titulo-uno{
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
