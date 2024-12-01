@@ -1,0 +1,30 @@
+@media(max-width:1024px){
+    .body-about{
+        main{
+            article{
+                .text-one{
+                    width: 180px;
+                    h3{
+                        font-size: 1.4vw;
+                    }
+                }
+                .text-two{
+                    width: 300px;
+                    h3{
+                        font-size: 1.4vw;
+                    }
+                }
+                .text-three{
+                    h3{
+                        font-size: 1.4vw;
+                    }
+                }
+                .text-for{
+                    h3{
+                        font-size: 2.4vw;
+                    }
+                }
+            }
+        }
+    }
+}
