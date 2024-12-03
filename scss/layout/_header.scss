@@ -4,7 +4,18 @@ header{
     height: 300px;
     .div-logo-ceo{
         display: flex;
-        justify-content: space-between;
+        flex-direction: column;
+        width: 10%;
+        justify-content:start ;
+        align-items: center;
+        .img-logo-index{
+            width: 80px;
+            height: 80px;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
         .div-title-ceo{
             display: flex;
             font-size: 10px;
